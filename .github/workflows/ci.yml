@@ -43,6 +43,7 @@ jobs:
         run: uv cache prune --ci
 
   build-image:
+    if: false  # no Dockerfile in repo – skip until one is added
     runs-on: ubuntu-24.04
 
     steps:
